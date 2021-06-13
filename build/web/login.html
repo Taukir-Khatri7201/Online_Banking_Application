@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            margin:0;
+            background:url(login.jpg)no-repeat;
+            background-size:cover;
+        }
+        
+        .menu-bar {
+            background : rgb(0,100,0);
+            text-align : center;
+        }
+        .menu-bar ul {
+            display : inline-flex;
+            list-style : none;
+            color : #fff;
+        }
+        .menu-bar ul li {
+            width : 120px;
+            margin : 15px;
+            padding : 15px;
+        }
+        .menu-bar ul li a {
+            text-decoration : none;
+            color : #fff;
+        }
+        .menu-bar ul li:hover {
+            background : #ab2d0c;
+            border-radius : 3px;
+        }
+        
+        .form{
+            font-family: "Roboto", sans-serif;
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            opacity: 99%;
+            max-width : 260px;
+            margin : 200px auto 100px;
+            padding : 10px 45px 30px 45px;
+            text-align : center;
+            box-shadow : 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+            border-radius : 10px;
+        }
+        .form input{
+            outline : 0;
+            border-radius :10px;
+            background : #F2F2F2;
+            width : 100%;
+            border : 0;
+            margin : 0 0 15px;
+            padding : 15px;
+            box-sizing : border-box;
+            font-size : 14px;
+        }
+        .form input:hover{
+            background : #19E2E7;
+            border-radius : 3px;
+            transition : all 1s ease 0s;
+        }
+        .form input:focus{
+            background : #19E2E7;
+            transition : all 1s ease 0s;
+        }
+        .form button{
+            text-transform : uppercase;
+            outline : 0;
+            border-radius : 10px;
+            background : #14EB1D;
+            width : 100%;
+            border : 0;
+            padding : 15px;
+            color : #FFFFFF;
+            font-size : 14px;
+            cursor : pointer;
+        }
+        .form .message{
+            margin : 15px 0 0;
+            color : #884585;
+            font-size : 14px; 
+        }
+        .form .message a{
+            color : #290FFD;
+            text-decoration : none;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login/Register</a></li>
+        </ul>
+    </div>
+    <div class="form">
+        <p>Login</p><br>
+        <form action="loginmain.jsp" method="post">
+            <input type="text" name="username" placeholder="Username"><br><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <br><button type="submit">Login</button><br><br>
+            <p class="message"> Not Registered ?  <a href="register.html">Create an account</a></p>
+        </form>
+    </div>
+</body>
+</html>
